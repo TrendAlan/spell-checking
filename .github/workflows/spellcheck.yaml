@@ -14,4 +14,3 @@ jobs:
         source_files: string.json
         task_name: JSON
         output_file: spellcheck-output.txt
-Trend Micro Incorporated - Taiwan
