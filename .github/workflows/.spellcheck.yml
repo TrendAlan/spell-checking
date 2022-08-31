@@ -1,0 +1,17 @@
+name: Spellcheck Action
+on: push
+
+jobs:
+  build:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    # The checkout step
+    - uses: actions/checkout@master
+    - uses: rojopolis/spellcheck-github-actions@0.26.0
+      name: Spellcheck
+      with:
+        source_files: src/locales/en-US/translation.json
+        task_name: JSON
+        output_file: spellcheck-output.txt
+Trend Micro Incorporated - Taiwan
